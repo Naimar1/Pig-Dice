@@ -125,3 +125,24 @@ $(document).ready(function () {
                 $("#input-details").modal();
             }
         });
+        $("#hold").click(function () {
+            if (num == 2) {
+                var getPlayerId = playerDetails[pos];
+                newMark = getPlayerId.playerMarks;
+                getPlayerId.Total(newMark);
+                finalScore = getPlayerId.totalScores;
+                console.log(finalScore);
+                //Make the total become 0;//Final score, This Round, Dice Value
+                getPlayerId.playerMarks = 0;
+                $("#content" + (pos + 1) + " h4").text("0");
+                $("#content" + (pos + 1) + " h1").text(finalScore);
+                $("#image-die").html("");
+                if (pos == 0) {
+                    $("#content" + (pos + 1)).removeClass("player-turn");
+                    pos = 1;
+                    $("#content" + (pos + 1)).addClass("player-turn");
+                } else if (pos == 1) {
+                    $("#content" + (pos + 1)).removeClass("player-turn");
+                    pos = 0;
+                    $("#content" + (pos + 1)).addClass("player-turn");
+                }
