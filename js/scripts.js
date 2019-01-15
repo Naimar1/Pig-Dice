@@ -116,3 +116,12 @@ $(document).ready(function () {
                 $("p.text-uppercase").text("");
                 $("#content" + (pos + 1) + " h4").text(newMark);
                 $("#image-die").html("<img class='dice' height='200' width = '200' src=" + getDieSide(getRandom) + ">")
+                console.log(getRandom + " " + pos + " " + newMark);
+            } else if (num == 1) {
+                alert("Player 2 Name Required");
+                $("#input-details").modal();
+            } else if (num == 0) {
+                alert("Players' Names Required");
+                $("#input-details").modal();
+            }
+        });
