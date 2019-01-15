@@ -45,3 +45,24 @@ function reset() {
     $("h1").text("0");
     $(".cumulative").text("");
 }
+//Front-End section
+$(document).ready(function () {
+    $("#fresh-game").mouseenter(function () {
+        $("#fresh-game").removeClass("animated");
+    })
+    $("#fresh-game").mouseleave(function () {
+        $("#fresh-game").addClass("animated");
+    })
+    $("#fresh-game").click(function () {
+        $("#start-game").hide();
+        $(".dice-game").show();
+        $("#reset").hide();
+    })
+    $("#reset").click(function () {
+        reset();
+        $("#hold").show();
+        $("#roll-dice").show();
+        $("#reset").hide();
+        $("#content1").addClass("player-turn");
+        // console.log(finalScore);
+    })
