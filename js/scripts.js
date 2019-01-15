@@ -146,3 +146,24 @@ $(document).ready(function () {
                     pos = 0;
                     $("#content" + (pos + 1)).addClass("player-turn");
                 }
+                if (finalScore > 99) {
+                    playerDetails[0].totalScores = 0;
+                    playerDetails[1].totalScores = 0;
+                    $(".winner-text").html("<h3 class = 'text-uppercase'>" + getPlayerId.playerNames + " HAS WON!!!</h3>")
+                    $("#winner-modal").modal();
+                    // alert(getPlayerId.playerNames + " has won!!");
+                    $("#hold").hide();
+                    $("#roll-dice").hide();
+                    $("#reset").show();
+                    $("#content1").removeClass("player-turn");
+                    $("#content2").removeClass("player-turn");
+                }
+            } else if (num == 1) {
+                alert("Player 2 Name Required");
+                $("#input-details").modal();
+            } else if (num == 0) {
+                alert("Players' Names Required");
+                $("#input-details").modal();
+            }
+        });
+    });
