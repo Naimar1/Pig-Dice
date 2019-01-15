@@ -127,4 +127,15 @@ a#fresh-game {
 .list-inline a {
     color: red;
 }
+@media (min-width: 992px) {
+    #navMain {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        -webkit-transition: padding-top 0.5s ease-in-out, padding-bottom 0.5s;
+        -moz-transition: padding-top 0.5s ease-in-out, padding-bottom 0.5s;
+        transition: padding-top 0.5s ease-in-out, padding-bottom 0.5s;
+        letter-spacing: 1px;
+        background: transparent;
+        font-size: 1.5em;
+    }
 
