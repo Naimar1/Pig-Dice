@@ -11,3 +11,18 @@ function PlayersInfo(name, score, totalScore) {
     this.playerMarks = score;
     this.totalScores = totalScore;
 }
+var genRandom = function () {
+    randomNo = Math.floor(Math.random() * 6) + 1;
+    return randomNo;
+}
+PlayersInfo.prototype.AddScores = function (thisMark) {
+    if (thisMark === 1) {
+        this.playerMarks = 0;
+    } else if (thisMark !== 1) {
+        this.playerMarks = this.playerMarks + thisMark;
+    }
+    return this.playerMarks;
+}
+PlayersInfo.prototype.Total = function (total) {
+    return this.totalScores = this.totalScores + total;
+}
