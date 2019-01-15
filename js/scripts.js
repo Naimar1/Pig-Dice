@@ -36,3 +36,12 @@ var getDieSide = function (getInput) {
 
     return diePic;
 }
+function reset() {
+    pos = 0;
+    PlayersInfo.playerMarks = 0;
+    PlayersInfo.totalScores = 0;
+    $("#image-die").html("");
+    $("p.text-uppercase").text("");
+    $("h1").text("0");
+    $(".cumulative").text("");
+}
