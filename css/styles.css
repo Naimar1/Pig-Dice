@@ -45,4 +45,38 @@ html {
     background-color: darkcyan;
     height: 20em;
 }
+.game-content {
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.dice-game {
+    padding-top: 6%;
+    display: none;
+}
+
+.center-panel button {
+    margin: 5%;
+}
+
+.center-panel p {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    color: rgba(255, 0, 0, 0.616);
+}
+
+.winner {
+    background-image: url("../img/dice.gif");
+    background-size: cover;
+    /* height:5em; */
+}
+
+.winner-text {
+    padding-top: 6em;
+    padding-bottom: 6em;
+    padding-left: 2%;
+    color: white;
+}
 
