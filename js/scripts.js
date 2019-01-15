@@ -26,3 +26,13 @@ PlayersInfo.prototype.AddScores = function (thisMark) {
 PlayersInfo.prototype.Total = function (total) {
     return this.totalScores = this.totalScores + total;
 }
+var getDieSide = function (getInput) {
+    if (getInput == 1) diePic = "img/dice/1.jpg";
+    else if (getInput == 2) diePic = "img/dice/2.jpg";
+    else if (getInput == 3) diePic = "img/dice/3.jpg";
+    else if (getInput == 4) diePic = "img/dice/4.jpg";
+    else if (getInput == 5) diePic = "img/dice/5.jpg";
+    else if (getInput == 6) diePic = "img/dice/6.jpg";
+
+    return diePic;
+}
