@@ -1,4 +1,4 @@
-# Pig Dice , 14/1/2019
+# PIG DICE GAME , 14/1/2019
 ## Author
 #### **Naima Niyigena**
 ## Description
