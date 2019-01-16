@@ -143,7 +143,7 @@ a#fresh-game {
         background-color: rgba(26, 25, 24, 0.699);
     }
     #navMain .nav-link.active:hover {
-        color: white;
+        color: darkcyan;
     }
     #navMain.navbar-shrink {
         padding-top: 10px;
@@ -170,5 +170,8 @@ a#fresh-game {
         align-items: center;
         font-family: 'Julius Sans One';
     }
+}
+
+
 }
 
